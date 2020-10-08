@@ -23,6 +23,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use(routes);
 
-http.listen(80, () => {
-  console.log('server is running on port', 80);
+http.listen(3001, () => {
+  console.log('server is running on port', 3001);
 });
