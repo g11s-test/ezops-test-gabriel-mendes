@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  web:
+    image: my-local
+    container_name: my-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/data/app
+    ports:
+      - '3000:3000'
