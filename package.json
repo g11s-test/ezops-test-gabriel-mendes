@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && pm2 start dist/server.js --name app",
-    "start": "ts-node-dev --respawn --transpile-only ./src/server.ts"
+    "build": "tsc",
+    "start": "pm2 start dist/server.js --name app",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
   },
   "keywords": [],
   "author": "",
